@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module02_Activity02.View.Page1">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Margin="20">
+            <!-- 9. Add binding context to entry -->
+            <Label Text="Subject Code" />
+            <Entry Text="{Binding SubjectCodeEntry}" />
+
+            <Label Text="Subject Title" />
+            <Entry Text="{Binding SubjectTitleEntry}" />
+            
+
+            <Label Text="Subject Unit" />
+            <Entry Text="{Binding SubjectUnitEntry}" />
+
+            <Button Command="{Binding SubmitEntry}" Text="Submit" />
+
+            <Label Text="{Binding SubjectCodeDisplay}" />
+            <Label Text="{Binding SubjectTitleDisplay}" />
+            <Label Text="{Binding SubjectUnitDisplay}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
