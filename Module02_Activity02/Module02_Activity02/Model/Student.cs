@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Module02_Activity02.Model
 {
+    // Models are entities with fields/variables
     class Student
     {
         public string SubjectCode { get; set; }
