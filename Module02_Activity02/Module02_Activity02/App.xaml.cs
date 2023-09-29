@@ -10,7 +10,7 @@ namespace Module02_Activity02
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new View.Page1());
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

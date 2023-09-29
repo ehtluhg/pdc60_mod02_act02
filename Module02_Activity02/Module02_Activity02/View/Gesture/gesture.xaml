@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Module02_Activity02.View.Gesture.gesture">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <!-- Drag -->
+            <Frame BackgroundColor="Bisque">
+                <Label Text="Sample Drag Gesture 1">
+                    <Label.GestureRecognizers>
+                        <DragGestureRecognizer CanDrag="True"
+                                               DragStarting="DragGestureRecognizer_DragStarting">
+                        </DragGestureRecognizer>
+
+                    </Label.GestureRecognizers>
+
+                </Label>
+
+            </Frame>
+
+            <Frame BackgroundColor="Blue">
+                <Label Text="Sample Drag Gesture 2">
+                    <Label.GestureRecognizers>
+                        <DragGestureRecognizer CanDrag="True"
+                                               DragStarting="DragGestureRecognizer_DragStarting">
+                        </DragGestureRecognizer>
+
+                    </Label.GestureRecognizers>
+
+                </Label>
+
+            </Frame>
+
+            <!-- Drop -->
+            <Frame BackgroundColor="BurlyWood">
+                <Frame.GestureRecognizers>
+                    <DropGestureRecognizer AllowDrop="True"
+                                           Drop="DropGestureRecognizer_Drop">
+                    </DropGestureRecognizer>
+
+                </Frame.GestureRecognizers>
+
+            </Frame>
+
+            <!-- Drop Text -->
+            <Entry>
+                <Entry.GestureRecognizers>
+                    <DropGestureRecognizer AllowDrop="True"
+                                           Drop="DropGestureRecognizer_Drop"/>
+                </Entry.GestureRecognizers>
+
+            </Entry>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

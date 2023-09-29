@@ -14,5 +14,29 @@ namespace Module02_Activity02
         {
             InitializeComponent();
         }
+
+        private async void ClickedMVVM(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new View.Page1());
+        }
+
+        private async void ClickedGestureText(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new View.Gesture.gesture());
+        }
+
+        private async void ClickedGestureImage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new View.Gesture.gestureimage());
+        }
+
+        private async void ClickedCompass(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new View.Compass());
+        }
+
+        void Button_Clicked(System.Object sender, System.EventArgs e)
+        {
+        }
     }
 }
